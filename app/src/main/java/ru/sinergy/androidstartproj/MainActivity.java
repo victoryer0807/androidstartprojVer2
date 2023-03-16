@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         textView.setLayoutParams(layoutParams);
 
-        constraintLayout.addView(constraintLayout);
+        constraintLayout.addView(textView);
+        setContentView(constraintLayout);
+
     }
 }
