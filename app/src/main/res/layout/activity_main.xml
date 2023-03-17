@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/view_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_constrainedWidth_default="spread"
+        android:layout_marginTop="16dp"
+        android:text="view_1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_2"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_1"
+        app:layout_constraintLeft_toRightOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_3"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/view_1"
+        app:layout_constraintLeft_toRightOf="@id/view_1" />
+    <TextView
+        android:id="@+id/view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_2"
+        app:layout_constraintLeft_toRightOf="@id/view_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
