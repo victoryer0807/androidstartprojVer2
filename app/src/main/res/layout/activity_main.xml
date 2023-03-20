@@ -11,9 +11,8 @@
 
     <TextView
         android:id="@+id/view_1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_constrainedWidth_default="spread"
         android:layout_marginTop="16dp"
         android:text="view_1"
         android:textSize="24sp"
